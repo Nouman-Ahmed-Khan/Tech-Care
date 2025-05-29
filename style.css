@@ -1,0 +1,43 @@
+.nav-side-margin {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* Active state styling */
+.patient-item.active {
+    background-color: #D8FCF7;
+  }
+
+/* Active state styling for Nav-Bar*/
+.nav-item.active {
+    background-color: #01F0D0;
+  }
+  
+/* nav-bar hover */
+.nav-item:hover {
+    background-color: #01F0D0;
+  }
+
+/* Background color graph */
+.bg-graph {
+    background-color: #F4F0FE;
+  }
+
+.button-bg{
+    background-color: #01F0D0;
+}
+
+/* circle-icon */
+.circle-icon {
+    /* Layout Properties */
+top: 234px;
+left: 939px;
+width: 14px;
+height: 14px;
+/* UI Properties */
+border: 1px solid var(--unnamed-color-ffffff);
+background: #E66FD2 0% 0% no-repeat padding-box;
+border: 1px solid #FFFFFF;
+opacity: 1;
+  }
