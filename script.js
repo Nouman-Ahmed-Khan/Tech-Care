@@ -77,3 +77,42 @@ const ctx = document.getElementById('myChart').getContext('2d');  // Get the can
 const myChart = new Chart(ctx, config);  // Create and render the chart
 
 // Getting Chart from API END
+
+//responsive menu toggle start
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('navbar-user');
+    menu.classList.toggle('hidden');
+  });
+
+// responsive menu toggle for end
+
+
+//side bar responsive toggle start
+
+ const toggleBtn = document.getElementById('toggleSidebarBtn');
+  const closeBtn = document.getElementById('closeSidebarBtn');
+  const sidebar = document.getElementById('patientsSidebar');
+
+  // Show sidebar
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.remove('hidden');
+  });
+
+  // Hide sidebar
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.add('hidden');
+  });
+
+  // Optional: Hide sidebar when clicking outside (on mobile)
+
+  
+  document.addEventListener('click', (e) => {
+    if (
+      window.innerWidth < 640 &&
+      !sidebar.contains(e.target) &&
+      !toggleBtn.contains(e.target)
+    ) {
+      sidebar.classList.add('hidden');
+    }
+  });
+//side bar toggle end
